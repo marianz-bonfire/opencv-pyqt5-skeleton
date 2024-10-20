@@ -1,0 +1,89 @@
+*{
+    font-family: Tahoma;
+    color: #BBBBBB;
+    background-color: #2F2F2F;
+}
+
+QDockWidget {
+    border: 1px solid #3A3939;
+}
+StackedTableWidget  {
+    border: 1px solid #3A3939;
+}
+StackedListWidget {
+    border: 1px solid #3A3939;
+}
+QTreeView{
+    show-decoration-selected: 1;
+}
+QTreeView::item{
+    height: 30px;
+}
+QTreeView::item:hover, QTreeView::branch:hover{
+    background: #4B6EAF;
+}
+QTreeView::item:selected, QTreeView::branch:selected{
+    background: #0071A4;
+}
+QTreeView::branch{
+    color: #BBBBBB;
+}
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    border-image: none;
+    image: url(icons/branch-close.png);
+}
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings  {
+    border-image: none;
+    image: url(icons/branch-open.png);
+}
+
+QLabel{
+    /*font-size: 18px;*/
+    border: 1px solid #3A3939;
+    border-width: 1px 1px 0px 1px;
+}
+
+/* Style the view */
+QGraphicsView{
+    border: 1px solid #3A3939;
+    background-color: #444444;
+}
+
+QListWidget::Item{
+    border: 1px solid #3A3939;
+    font-size: 20px;
+    /*background: #717678;   */
+    color: #DDDDDD;
+}
+
+QListWidget::Item:hover{
+    background: #4B6EAF;
+}
+
+SourceView{
+    border-style: inset;
+    border: 1px solid #3A3939;
+}
+
+ScreenListWidget::Item{
+    border: 1px solid #3A3939;
+    margin:0px 0px 1px 0px
+}
+
+ScreenListWidget::Item:selected{
+    background: #0071A4;
+}
+
+QTableWidget{
+    alternate-background-color: #444444;
+}
+
+QToolButton{
+    word-wrap: break-word;
+}
+
+QToolButton:hover{
+    background: #4B6EAF;
+}

@@ -30,3 +30,7 @@ pip install -r requirements.txt
 ```
 python main.py
 ```
+
+## Development
+
+ - Python 3.10
